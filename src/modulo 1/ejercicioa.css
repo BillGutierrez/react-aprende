@@ -1,0 +1,35 @@
+.contenedor_perfil{
+    display:block;
+    margin: auto;
+    border: 1px solid #8B5E3C;
+    width: 600px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow:0px 0px 10px 5px #ad7850;
+
+}
+.borde{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.perfil{
+    display:block;
+    width: 200px;
+    margin:0 auto; /*centra la imagen*/
+
+}
+.texto{
+    margin: 5px;
+}
+.nombre{
+    size: 40px;
+    font-weight: bold;
+    color: #4E220F;
+}
+.profesion{
+    size: 30px;
+    font-weight: 400;
+}

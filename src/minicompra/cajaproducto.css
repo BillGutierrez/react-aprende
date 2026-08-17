@@ -1,0 +1,75 @@
+.Contenedor_cajaproducto {
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    width: 260px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    background: #ffffff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.Contenedor_cajaproducto:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.Contenedor_cajaproducto > img {
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 8px;
+}
+
+.Contenedor_cajaproducto > h1 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+    color: #222;
+    line-height: 1.3;
+    /* corta títulos largos con "..." en vez de romper el diseño */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.Contenedor_cajaproducto > span {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+/* precio: lo hacemos más grande y con otro color para que resalte */
+.Contenedor_cajaproducto > span:nth-of-type(2) {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1a7f37;
+}
+
+/* categoría: como una etiqueta chica */
+.Contenedor_cajaproducto > span:nth-of-type(1) {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 0.05em;
+    color: #999;
+}
+
+.Contenedor_cajaproducto > button {
+    margin-top: 8px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s ease;
+}
+
+.Contenedor_cajaproducto > button:hover {
+    background: #1d4ed8;
+}
