@@ -1,0 +1,24 @@
+.contenedor_error {
+	/* position: absolute;
+	left: 0;
+	top: 0; */
+	width: 100%;
+	/* height: 100%; */
+	/* z-index: 50; */
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	justify-content: center;
+	background-color: #0f172a;
+}
+
+
+.mensaje_error {
+	display: block;
+	padding: 20px;
+	font-size: 28px;
+	font-weight: bold;
+	background-color: rgb(201, 22, 22);
+	text-align: center;
+	color: white;
+}
