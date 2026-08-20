@@ -1,0 +1,42 @@
+.contenedor{
+    width: 400px;
+    display: block;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px auto;
+    box-shadow: 0 0px 20px #232F72;
+    transition:all;
+}
+.contenedor>h1,h3,p{
+    margin: 5px 0px;
+}
+.contenedor>img{
+    display: block;
+    width: 120px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.contenedor>p{
+    text-align: justify;
+}
+.Boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.caro{
+    display: flex;
+    padding: 10px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+.barato{
+    display: block;
+    padding: 10px;
+    color: black;
+}
+.contenedor:hover{
+    background-color: rgb(237, 237, 237);
+}

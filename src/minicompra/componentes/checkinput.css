@@ -1,0 +1,31 @@
+.contenedor_check {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 5px;
+    align-items: center;
+    user-select: none;
+}
+
+.oculto{
+    width: 10px;
+    height: 1px;
+    padding: 0;
+    margin: 1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.mi_check{
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+.es_check {
+    background-color: blue;
+    border-color: black;
+}

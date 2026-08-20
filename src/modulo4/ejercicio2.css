@@ -1,0 +1,20 @@
+.contenedor_registro {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: end;
+    background-image: url(https://www.dehuancayo.com//index.php?view=image&format=raw&type=img&id=65&Itemid=117&option=com_joomgallery);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Formulario_registro {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #9c3232;
+}

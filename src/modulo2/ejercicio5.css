@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Sekuya&display=swap');
+.contenedor_lista{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 250px;
+    justify-content: center;
+    background-position: center;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('https://img.magnific.com/vector-gratis/fondo-garabato-abstracto-plano_23-2149336498.jpg');
+
+}
+
+.lista{
+    display:flex;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: white;
+    padding: 10px 40px;
+}
+
+.lista h2 {
+    margin: 0;
+    padding: 10px;
+    font-family: monospace;
+    color: #BE5985;
+}

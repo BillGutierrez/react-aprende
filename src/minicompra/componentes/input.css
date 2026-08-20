@@ -1,0 +1,29 @@
+.contenedor_input{
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	width: 100%;
+	gap: 10px;
+	padding: 5px 0;
+}
+.contenedor_input>label{
+	font-size: 18px;
+	font-weight: bold;
+	color: rgb(47, 47, 47);
+}
+.myinput{
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	padding: 0 5px
+}
+.myinput>input{
+	border: 1px solid rgb(156, 156, 156);
+	outline: none;
+	padding: 5px 10px;
+	transition: all 0.5s;
+	border-radius: 15px;
+}
+.myinput>input:focus{
+	border-color: rgb(251, 148, 80);
+}

@@ -1,0 +1,187 @@
+/* Contenedor central */
+.loader-container {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 250px;
+	background-color: #0f172a; /* Fondo oscuro para resaltar el efecto neón */
+	font-family:
+		system-ui,
+		-apple-system,
+		sans-serif;
+	border-radius: 12px;
+}
+
+/* Spinner principal */
+.spinner {
+	position: relative;
+	width: 64px;
+	height: 64px;
+}
+
+/* Capas de animación usando los divs internos */
+.spinner div {
+	box-sizing: border-box;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border: 4px solid transparent;
+	border-radius: 50%;
+}
+
+/* Anillo exterior con gradiente */
+.spinner div:nth-child(1) {
+	border-top-color: #6366f1; /* Indigo */
+	border-right-color: #a855f7; /* Púrpura */
+	animation: spin-clockwise 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+	filter: drop-shadow(0 0 8px rgba(99, 102, 241, 0.6));
+}
+
+/* Anillo interior invertido */
+.spinner div:nth-child(2) {
+	width: 70%;
+	height: 70%;
+	top: 15%;
+	left: 15%;
+	border-bottom-color: #06b6d4; /* Cian */
+	border-left-color: #3b82f6; /* Azul */
+	animation: spin-counterclockwise 0.8s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+	filter: drop-shadow(0 0 6px rgba(6, 182, 212, 0.6));
+}
+
+/* Texto sutil con animación de respiración */
+.loader-text {
+	margin-top: 24px;
+	color: #94a3b8;
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	animation: pulse 1.5s ease-in-out infinite;
+}
+
+/* --- Keyframes de las animaciones --- */
+
+/* Giro horario con aceleración fluida */
+@keyframes spin-clockwise {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/* Giro antihorario */
+@keyframes spin-counterclockwise {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(-360deg);
+	}
+}
+
+/* Efecto de parpadeo suave en el texto */
+@keyframes pulse {
+	0%,
+	100% {
+		opacity: 0.4;
+	}
+	50% {
+		opacity: 1;
+	}
+}
+
+
+
+/* User Card */
+
+.contenedor_card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    /* justify-content: center; */
+    margin: 5px;
+    background-color: #eee593;
+    padding: 10px;
+    border: 1px solid #6366f1;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 350px;
+}
+
+.info_card{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.info_card>*{
+    margin: 0;
+    padding: 5px 0;
+}
+
+.enlinea{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+.enlinea>*{
+    margin: 0;
+    padding: 5px 0;
+}
+
+
+/* Ejercicio 2 */
+
+.contenedor_ejer2 {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor_usuarios{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-evenly;
+    gap: 15px;
+}
+
+/*    Para el mensaje de error    */
+
+.contenedor_error {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 50;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	justify-content: center;
+	background-color: #0f172a;
+}
+
+
+.mensaje_error {
+	display: block;
+	padding: 20px;
+	font-size: 28px;
+	font-weight: bold;
+	background-color: rgb(201, 22, 22);
+	text-align: center;
+	color: white;
+}
